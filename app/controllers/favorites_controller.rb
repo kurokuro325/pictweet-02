@@ -7,9 +7,8 @@ class FavoritesController < ApplicationController
   end
   
   def destroy
-    post = Tweet.find(params[:tweet_id])
-    favorite = current_user.favorites.find_by(tweet_id: tweet.id)
-    favorite.destroy
-    redirect_to tweet_path(post)
+    @tweet_favorite = Favorite.find_by(user_id: current_user.id, tweet_id: params[:tweet_id])
+    @tweet_favorite.destroy
+    redirect_to tweet_path(params[:tweet_id]) 
   end
 end
