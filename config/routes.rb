@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'events/index'
   devise_for :users
   root to: 'tweets#index'
   resources :tweets do
@@ -6,4 +7,5 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
   end
   resources :users, only: :show
+  resources :events
 end

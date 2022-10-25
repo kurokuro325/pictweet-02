@@ -1057,3 +1057,23 @@ footer p {
 .search-form .search-btn {
   width: 10%;
 }
+
+.title {
+  margin: 20px auto;
+  width: 400px 
+}
+
+.time {
+  margin: 20px auto;
+  width: 400px
+}
+
+.content {
+  margin: 20px auto;
+  width: 400px
+}
+
+.submit {
+  margin: 20px auto;
+  width: 400px
+}
