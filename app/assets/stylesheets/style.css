@@ -707,7 +707,7 @@ form input[type="submit"] {
 header.header div.header__bar.row div.grid-6 a.post {
   padding: 8px 20px;
   font-size: 14px;
-  border: 2px solid #57C3E9;
+  border: 2px solid blue;
   color: #57C3E9;
   font-weight: bold;
   text-align: center;
